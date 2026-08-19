@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лучший отель в мире — Прототип</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Лучший отель в мире</h1>
+
+        <div class="section message-row">
+            <input type="text" id="messageInput" placeholder="Введите сообщение..." />
+            <button id="sendButton" class="btn-primary">Отправить сообщение</button>
+        </div>
+
+        <div class="section answer-row">
+            <div id="answerBox" class="answer-box"></div>
+            <div class="robot-icon" title="ИИ-агент">🤖</div>
+        </div>
+
+        <div class="section passport-row">
+            <button id="passportButton" class="btn-primary">Загрузить паспорт</button>
+            <div id="passportStatus" class="info-box">Паспорт не загружен</div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

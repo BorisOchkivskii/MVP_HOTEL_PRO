@@ -1,0 +1,95 @@
+body {
+    background-color: #d1f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    max-width: 700px;
+    width: 100%;
+}
+h1 {
+    color: #ffcc00;
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 0 #b38f00;
+}
+.section {
+    margin-bottom: 25px;
+}
+.btn-primary {
+    background-color: #0b1f3a;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+.btn-primary:hover {
+    opacity: 0.9;
+}
+.btn-primary:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.info-box {
+    background-color: white;
+    border: 2px solid #0b1f3a;
+    border-radius: 6px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    display: inline-block;
+    min-width: 180px;
+    text-align: center;
+}
+.passport-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.message-row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.message-row input[type="text"] {
+    padding: 12px;
+    border-radius: 6px;
+    border: 2px solid #0b1f3a;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+.message-row button {
+    align-self: flex-start;
+}
+.answer-row {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+}
+.answer-box {
+    flex: 1;
+    min-height: 80px;
+    background-color: white;
+    border: 2px solid #0b1f3a;
+    border-radius: 6px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    line-height: 1.4;
+    white-space: pre-wrap;
+}
+.robot-icon {
+    font-size: 48px;
+    align-self: center;
+    margin-left: 5px;
+}
